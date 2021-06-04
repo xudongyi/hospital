@@ -1,0 +1,17 @@
+spring:
+#  datasource:
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    jdbc-url: jdbc:oracle:thin:@10.124.0.42:1521:tact5
+#    username: uop_act5
+#    password: uop_act5_cb1cs
+  datasource:
+    name: test  #数据库名
+    url: jdbc:mysql://47.100.21.238:3306/ruoyi-html #url
+    username: root  #用户名
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #配置映射文件
+  type-aliases-package: com.example.hospital.bean #配置实体类
+
